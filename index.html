@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="Text Dissociator" content="Dissociated Press Algorithm for JavaScript">
+  <title>ZVK's Dissociator.js</title>
+  <link rel="stylesheet" media="all" href="styles.css">
+  <style>
+  body {
+	background: #333444;
+}
+  </style>
+  <script type="text/javascript"  src="dissociator.js"></script>
+  <script>
+    function handleClick(){
+      var input = document.getElementById("inputText").value;
+      console.log(input);
+      console.log(dissociate(input));
+    }  
+  </script>
+  </script>
+  
+  </head>
+  <body>
+  <h1>Dissociator.js</h1>
+  <p><textarea id="inputText" cols="60" rows="12">Enter Some Text To Be Chopped...</textarea></p>
+  <button type="button" onclick="handleClick()">CHOP IT UP!</button>
+  <p>
+    <div id="outputText"></div>
+  </p>
+  </body>
+</html>
